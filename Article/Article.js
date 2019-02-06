@@ -23,6 +23,9 @@ class Article {
   expandArticle () {
     // Using our reference to the domElement, toggle a class to expand or hide the article.
     this.domElement.classList.toggle('article-open');
+
+    //TweenMax.to(this.domElement, 2, {height: 400});
+    
   }
 }
 
@@ -37,3 +40,9 @@ class Article {
 let articles = document.querySelectorAll('.article');
 
 articles.forEach(article => new Article(article));
+
+
+
+
+
+
